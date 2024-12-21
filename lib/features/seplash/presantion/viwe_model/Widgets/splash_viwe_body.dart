@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'package:bookly_app/constans.dart';
 import 'package:bookly_app/core/utils/assets.dart';
+import 'package:bookly_app/features/home/presantion/viwe/home_viwe.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import '../../../../home/presantion/viwe_model/viwe/home_viwe.dart';
 
 class SplashViweBody extends StatefulWidget {
   const SplashViweBody({super.key});
@@ -13,7 +13,8 @@ class SplashViweBody extends StatefulWidget {
   _SplashViweBodyState createState() => _SplashViweBodyState();
 }
 
-class _SplashViweBodyState extends State<SplashViweBody> with TickerProviderStateMixin {
+class _SplashViweBodyState extends State<SplashViweBody>
+    with TickerProviderStateMixin {
   late AnimationController _logoController;
   late AnimationController _textController;
   late Animation<double> _logoAnimation;
@@ -92,7 +93,9 @@ class _SplashViweBodyState extends State<SplashViweBody> with TickerProviderStat
                 child: SizedBox(
                   height: 200.h,
                   width: 200.w,
-                  child: SvgPicture.asset( AssetsData.logo,),
+                  child: SvgPicture.asset(
+                    AssetsData.logo,
+                  ),
                 ),
               ),
             ),
