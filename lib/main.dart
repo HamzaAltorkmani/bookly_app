@@ -1,5 +1,5 @@
 import 'package:bookly_app/constans.dart';
-import 'package:bookly_app/features/seplash/presantion/viwe_model/viwes/splash_viwe.dart';
+import 'package:bookly_app/features/seplash/presantion/viwes/splash_viwe.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';

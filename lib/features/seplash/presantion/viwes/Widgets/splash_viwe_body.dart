@@ -37,7 +37,7 @@ class _SplashViweBodyState extends State<SplashViweBody> with TickerProviderStat
     // إعداد Animation للشعار
     _logoAnimation = CurvedAnimation(
       parent: _logoController,
-      curve: Curves.easeInOut,
+      curve: Curves.bounceInOut,
     );
 
     // بدء Animation للشعار
@@ -52,7 +52,7 @@ class _SplashViweBodyState extends State<SplashViweBody> with TickerProviderStat
     // إعداد Animation للنص
     _textAnimation = CurvedAnimation(
       parent: _textController,
-      curve: Curves.easeInOut,
+      curve: Curves.bounceIn,
     );
 
     // بدء Animation للنص بعد انتهاء Animation الشعار
