@@ -1,15 +1,10 @@
+import 'dart:async';
 import 'package:bookly_app/constans.dart';
 import 'package:bookly_app/core/utils/assets.dart';
-<<<<<<< HEAD
-import 'package:bookly_app/features/home/presantion/viwe_model/viwe/home_viwe.dart';
-=======
-import 'package:bookly_app/features/home/presantion/viwe/home_viwe.dart';
->>>>>>> 342209e (splash_viwe)
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'dart:async';
-
 import 'package:flutter_svg/flutter_svg.dart';
+import '../../../../home/presantion/viwe_model/viwe/home_viwe.dart';
 
 class SplashViweBody extends StatefulWidget {
   const SplashViweBody({super.key});
