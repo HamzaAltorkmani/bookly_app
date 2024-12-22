@@ -1,4 +1,4 @@
-import 'package:bookly_app/features/home/presantion/viwe/widget/home_viwe_body.dart';
+import 'package:bookly_app/features/home/presantion/viwe/widget/custom_appBar.dart';
 import 'package:flutter/material.dart';
 
 class HomeViwe extends StatelessWidget {
@@ -7,7 +7,12 @@ class HomeViwe extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  const Scaffold(
-      body: HomeViweBody(),
+      body:  Column(
+        children: [
+          CustomAppBar(),
+
+        ],
+      ),
     );
   }
 }
