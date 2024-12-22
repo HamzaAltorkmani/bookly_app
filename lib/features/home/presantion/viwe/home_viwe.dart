@@ -1,4 +1,4 @@
-import 'package:bookly_app/features/home/presantion/viwe_model/widget/home_viwe_body.dart';
+import 'package:bookly_app/features/home/presantion/viwe/widget/home_viwe_body.dart';
 import 'package:flutter/material.dart';
 
 class HomeViwe extends StatelessWidget {
