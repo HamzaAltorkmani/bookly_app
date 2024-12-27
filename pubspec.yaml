@@ -40,6 +40,7 @@ dependencies:
   flutter_screenutil: ^5.9.3
   get: ^4.6.6
   flutter_svg: ^2.0.16
+  google_fonts: ^6.2.1
 
 dev_dependencies:
   flutter_test:
@@ -80,11 +81,11 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
+  fonts:
+    - family: Sectra
+      fonts:
+        - asset: assets/fount/GT-Sectra-Fine-Regular/GT-Sectra-Fine-Regular.ttf
+  #     - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:

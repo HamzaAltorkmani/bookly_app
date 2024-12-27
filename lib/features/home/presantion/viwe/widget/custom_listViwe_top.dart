@@ -22,7 +22,7 @@ class CustomListViweTop extends StatelessWidget {
             ),
           ),
           child: Image.asset(
-            'assets/images/Book 2 High.png',
+            'assets/images/Book 1 High.png',
             fit: BoxFit.cover,
           ),
         ),
