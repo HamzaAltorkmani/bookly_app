@@ -1,4 +1,4 @@
-import 'package:bookly_app/features/home/presantion/viwe/widget/custom_listViwe_top.dart';
+import 'package:bookly_app/features/home/presantion/viwe/widget/custom_book_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -15,10 +15,11 @@ class CustomListViewBuilder extends StatelessWidget {
           itemBuilder:(context,index){
             return Padding(
               padding:  EdgeInsets.symmetric(horizontal: 5.0.w),
-              child: const CustomListViweTop(),
+              child: const CustomBookImage(height: 220, width: 140, widthBorder: 1.5,),
             );
           }
       ),
     );
   }
 }
+

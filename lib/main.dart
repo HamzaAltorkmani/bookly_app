@@ -1,8 +1,8 @@
 import 'package:bookly_app/constans.dart';
-import 'package:bookly_app/features/seplash/presantion/viwes/splash_viwe.dart';
+import 'package:bookly_app/core/utils/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const BooklyApp());
@@ -18,12 +18,15 @@ class BooklyApp extends StatelessWidget {
       designSize: const Size(375, 812),
       minTextAdapt: true,
       builder: (context, child) {
-        return GetMaterialApp(
-          theme: ThemeData.dark().copyWith(
-            scaffoldBackgroundColor:kPrimaryColor,
-          ),
+        return MaterialApp.router(
+          routerConfig: AppRouter.router,
           debugShowCheckedModeBanner: false,
-          home: const SplashViwe(),
+          theme: ThemeData.dark().copyWith(
+            scaffoldBackgroundColor: kPrimaryColor,
+            textTheme: GoogleFonts.montserratTextTheme(
+              ThemeData.dark().textTheme,
+            ),
+          ),
         );
       },
     );

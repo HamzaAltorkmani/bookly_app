@@ -2,27 +2,29 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class CustomListViweTop extends StatelessWidget {
-  const CustomListViweTop({
-    super.key,
+class CustomBookImage extends StatelessWidget {
+  const CustomBookImage({
+    super.key, required this.height, required this.width, required this.widthBorder,
   });
-
+  final double height;
+  final double width;
+  final double widthBorder;
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
         Container(
-          height: 220.h,
-          width: 140.w,
+          height: height.h,//220
+          width: width.w,//140
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(15.r),
+            borderRadius: BorderRadius.circular(18.r),
             border: Border.all(
               color: Colors.white,
-              width: 1.5.w,
+              width: widthBorder.w,//1.5
             ),
           ),
           child: Image.asset(
-            'assets/images/Book 2 High.png',
+            'assets/images/Book 1 High.png',
             fit: BoxFit.cover,
           ),
         ),

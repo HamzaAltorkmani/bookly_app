@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'package:bookly_app/constans.dart';
 import 'package:bookly_app/core/utils/assets.dart';
-import 'package:bookly_app/features/home/presantion/viwe/home_viwe.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:go_router/go_router.dart';
 
 class SplashViweBody extends StatefulWidget {
   const SplashViweBody({super.key});
@@ -60,10 +60,7 @@ class _SplashViweBodyState extends State<SplashViweBody>
 
     // الانتقال إلى الشاشة الرئيسية بعد 4 ثوانٍ
     Timer(const Duration(seconds: 4), () {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => const HomeViwe()),
-      );
+      GoRouter.of(context).pushReplacement('/homeViwe');
     });
   }
 
